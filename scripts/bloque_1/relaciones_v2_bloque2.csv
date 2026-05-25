@@ -1,0 +1,34 @@
+﻿año,comuna,pm25_promedio_anual,pm25_maximo_anual,pm25_p95_anual,arb_totales,arb_mitigadores,ratio_mitigadores,rank_pm25,rank_deficit,score_vulnerabilidad,ranking_vulnerabilidad,deficit_pct_mitigadores,arboles_mitigadores_adicionales,prioridad_intervencion
+2023,Corregimiento de Santa Elena,12.98,75.0,27.15,4093,219,5.35,30.0,29.0,59.0,3,24.65,1009,🟡 MEDIA – Monitoreo Activo
+2023,Robledo,16.16,135.0,32.0,4398,154,3.5,25.0,20.0,45.0,8,26.5,1165,🟠 MEDIA-ALTA – Prioridad Elevada
+2023,Corregimiento de San Cristóbal,16.92,70.09,31.19,3942,155,3.93,18.5,23.0,41.5,10,26.07,1028,🟠 MEDIA-ALTA – Prioridad Elevada
+2023,La América,19.48,111.6,39.25,2588,140,5.41,9.0,32.0,41.0,12,24.59,636,🟠 MEDIA-ALTA – Prioridad Elevada
+2023,Villa Hermosa,16.23,144.6,31.18,3615,118,3.26,24.0,17.0,41.0,12,26.74,967,🟠 MEDIA-ALTA – Prioridad Elevada
+2023,La Candelaria,23.39,93.0,42.0,7294,320,4.39,3.0,26.0,29.0,18,25.61,1868,🔴 ALTA – Intervención Urgente
+2023,Santa Cruz,17.65,138.31,32.74,4343,118,2.72,14.0,11.0,25.0,24,27.28,1185,🟠 MEDIA-ALTA – Prioridad Elevada
+2023,Belén,19.62,110.98,36.34,3259,101,3.1,8.0,14.0,22.0,26,26.9,877,🟠 MEDIA-ALTA – Prioridad Elevada
+2023,Guayabal,17.37,79.0,34.0,4123,81,1.96,16.0,5.0,21.0,28,28.04,1156,🟠 MEDIA-ALTA – Prioridad Elevada
+2023,El Poblado,17.05,93.82,33.18,2209,42,1.9,17.0,2.0,19.0,29,28.1,621,🟠 MEDIA-ALTA – Prioridad Elevada
+2023,Castilla,20.13,76.0,38.33,3077,62,2.01,6.0,8.0,14.0,33,27.99,861,🔴 ALTA – Intervención Urgente
+2024,Corregimiento de Santa Elena,11.74,90.6,25.19,4093,219,5.35,32.0,29.0,61.0,2,24.65,1009,🟡 MEDIA – Monitoreo Activo
+2024,Corregimiento de San Cristóbal,16.4,89.31,30.81,3942,155,3.93,22.0,23.0,45.0,8,26.07,1028,🟠 MEDIA-ALTA – Prioridad Elevada
+2024,La América,21.28,112.51,42.25,2588,140,5.41,5.0,32.0,37.0,14,24.59,636,🔴 ALTA – Intervención Urgente
+2024,Villa Hermosa,16.9,83.25,32.8,3615,118,3.26,20.0,17.0,37.0,14,26.74,967,🟠 MEDIA-ALTA – Prioridad Elevada
+2024,Robledo,17.38,129.0,33.0,4398,154,3.5,15.0,20.0,35.0,15,26.5,1165,🟠 MEDIA-ALTA – Prioridad Elevada
+2024,El Poblado,15.38,231.88,30.51,2209,42,1.9,26.0,2.0,28.0,20,28.1,621,🟠 MEDIA-ALTA – Prioridad Elevada
+2024,La Candelaria,28.72,122.0,48.33,7294,320,4.39,1.0,26.0,27.0,22,25.61,1868,🔴 ALTA – Intervención Urgente
+2024,Santa Cruz,19.28,140.09,34.62,4343,118,2.72,10.0,11.0,21.0,28,27.28,1185,🟠 MEDIA-ALTA – Prioridad Elevada
+2024,Belén,23.1,84.96,43.53,3259,101,3.1,4.0,14.0,18.0,30,26.9,877,🔴 ALTA – Intervención Urgente
+2024,Guayabal,17.84,107.0,35.0,4123,81,1.96,13.0,5.0,18.0,30,28.04,1156,🟠 MEDIA-ALTA – Prioridad Elevada
+2024,Castilla,19.97,79.0,36.0,3077,62,2.01,7.0,8.0,15.0,32,27.99,861,🟠 MEDIA-ALTA – Prioridad Elevada
+2025,Corregimiento de Santa Elena,7.47,93.49,17.85,4093,219,5.35,33.0,29.0,62.0,1,24.65,1009,🟡 MEDIA – Monitoreo Activo
+2025,Corregimiento de San Cristóbal,14.52,94.51,27.33,3942,155,3.93,28.0,23.0,51.0,4,26.07,1028,🟡 MEDIA – Monitoreo Activo
+2025,Robledo,15.32,106.0,30.33,4398,154,3.5,27.0,20.0,47.0,5,26.5,1165,🟠 MEDIA-ALTA – Prioridad Elevada
+2025,Villa Hermosa,13.97,170.21,29.03,3615,118,3.26,29.0,17.0,46.0,6,26.74,967,🟡 MEDIA – Monitoreo Activo
+2025,La América,18.31,178.85,36.83,2588,140,5.41,12.0,32.0,44.0,9,24.59,636,🟠 MEDIA-ALTA – Prioridad Elevada
+2025,Santa Cruz,16.28,194.76,30.31,4343,118,2.72,23.0,11.0,34.0,16,27.28,1185,🟠 MEDIA-ALTA – Prioridad Elevada
+2025,El Poblado,12.12,62.71,24.74,2209,42,1.9,31.0,2.0,33.0,17,28.1,621,🟡 MEDIA – Monitoreo Activo
+2025,Castilla,16.51,123.0,33.0,3077,62,2.01,21.0,8.0,29.0,18,27.99,861,🟠 MEDIA-ALTA – Prioridad Elevada
+2025,La Candelaria,23.88,85.0,43.33,7294,320,4.39,2.0,26.0,28.0,20,25.61,1868,🔴 ALTA – Intervención Urgente
+2025,Belén,19.27,117.83,36.05,3259,101,3.1,11.0,14.0,25.0,24,26.9,877,🟠 MEDIA-ALTA – Prioridad Elevada
+2025,Guayabal,16.92,69.0,34.0,4123,81,1.96,18.5,5.0,23.5,25,28.04,1156,🟠 MEDIA-ALTA – Prioridad Elevada

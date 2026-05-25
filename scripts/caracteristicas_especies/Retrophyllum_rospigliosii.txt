@@ -1,0 +1,36 @@
+ESPECIE: Retrophyllum_rospigliosii
+==================================================
+
+Familia: Podocarpaceae
+Nombre científico: Retrophyllum rospigliosii
+Autor: (Pilg.) C.N.Page
+Etimología: -
+SinónimoNageia rospigliosii: Nageia rospigliosii
+Nombre común: Chaquiro, romerón, pino colombiano
+Origen: Nativa
+Continente: Sur América
+Distribución geográfica: Venezuela a Bolivia
+Altura máxima (m): 45
+Diámetro (cm): 200
+Densidad de follaje: Alta
+Modelo arquitectónico: No determinado
+Sistema radicular: Profundo
+Atributos foliares: Dispuestas en un solo plano sobre ramas largas, extendidas y algo péndulas
+Atributos florales: -
+Sistema de polinización: Anemófila (viento)
+Sistema de dispersión: Zoocoria (animales)
+Atracción fauna: Alta
+Densidad madera (g/cm³): -
+Tasa de crecimiento: Lenta a Media
+Longevidad: Alta (> 60 años)
+Zonas de humedad: Húmeda
+Rango altitudinal: 1501 - 2000 msnm, 2001 - 3000 msnm
+Requerimiento de luminosidad: Media
+Tipo de suelo: Profundo y bien drenado
+Uso: La madera se usa para muebles y carpintería interior
+Función: Ornamental, Barrera rompevientos, Barrera contra ruido
+Usos en espacio público: Cerros, Glorietas, Parques, Plazas/Plazoletas, Edificios institucionales
+Estado de conservación: Casi amenazada (NT)
+Plagas y enfermedades reportadas: -
+Observaciones: -
+Fuentes: Alcaldía de Medellín (2011), AMVA y UNAL (2014), Varón y Morales (2016)

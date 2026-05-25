@@ -1,0 +1,15 @@
+﻿codigo_estacion,nombre_estacion,latitud,longitud,Municipio,estado,comuna_por_gis
+CEN-TRAF,Estación Tráfico Centro,6.2525611,-75.5695801,Medellín,Activa,La Candelaria
+MED-UNNV,Universidad Nacional sede El Volador,6.2633696,-75.5770035,Medellín,Inactiva,Robledo
+MED-LAYE,Tanques La Ye EPM,6.1825418,-75.5506363,Medellín,Inactiva,Corregimiento de Santa Elena
+MED-ALTA,I.E. Pedro Octavio Amado,6.2218938,-75.6106033,Medellín,Activa,Belén
+MED-VILL,Planta de agua potable de EPM,6.261722,-75.551639,Medellín,Activa,Villa Hermosa
+MED-BEME,I.E. Pedro Justo Berrío,6.243,-75.61201,Medellín,Activa,La América
+MED-TESO,I.E. INEM sede Santa Catalina,6.19987,-75.56095,Medellín,Activa,El Poblado
+MED-SCRI,Parque Biblioteca Fernando Botero,6.2805,-75.6366,Medellín,Activa,Corregimiento de San Cristóbal
+MED-ARAN,I.E. Ciro Mendía,6.2934599,-75.556427,Medellín,Activa,Santa Cruz
+MED-SELE,Medellín - Santa Elena,6.236361,-75.498472,Medellín - Santa Elena,Activa,Corregimiento de Santa Elena
+MED-FISC,Fiscalía General de la Nación,6.2687889,-75.57370833,Medellín,Activa,Castilla
+MED-PBLQ,Tomás Carrasquilla - La Quintana,6.285,-75.583055,Medellín,Activa,Robledo
+MED-PROV,Almacén General de EPM,6.2297784,-75.5860518,Medellín,Activa,Guayabal
+MED-CES,Universidad CES,6.207386,-75.551851,Medellín,Activa,El Poblado

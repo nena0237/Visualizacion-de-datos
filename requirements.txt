@@ -1,0 +1,56 @@
+attrs @ file:///home/task_177495961792281/croot/attrs_1774959649497/work
+beautifulsoup4 @ file:///home/task_177029088812212/croot/beautifulsoup4-split_1770291772008/work
+branca @ file:///home/task_176709360218739/croot/branca_1767093667524/work
+brotlicffi @ file:///home/task_176496126124857/conda-bld/brotlicffi_1764961326114/work
+certifi @ file:///home/task_177697098542695/croot/certifi_1776971111806/work/certifi
+cffi @ file:///home/task_176183214835616/conda-bld/cffi_1761832774688/work
+charset-normalizer @ file:///home/task_176174481524083/conda-bld/charset-normalizer_1761744828711/work
+contourpy @ file:///home/task_176364358039429/conda-bld/contourpy_1763643922278/work
+cycler @ file:///home/task_176606792703097/croot/cycler_1766067949602/work
+et_xmlfile @ file:///croot/et_xmlfile_1756462486635/work
+folium @ file:///home/task_175874977673164/conda-bld/folium_1758749951126/work
+fonttools @ file:///home/task_177425645253092/croot/fonttools_1774256487913/work
+geopandas @ file:///home/task_177444591076260/croot/geopandas-split_1774445937081/work
+h11 @ file:///home/task_176193111687894/conda-bld/h11_1761931259172/work
+idna @ file:///home/task_176191175488988/conda-bld/idna_1761911981595/work
+Jinja2 @ file:///croot/jinja2_1741710844255/work
+joblib @ file:///home/task_176786809434125/croot/joblib_1767868115715/work
+kiwisolver @ file:///home/task_176415904289632/conda-bld/kiwisolver_1764159297891/work
+mapclassify @ file:///home/task_177082036095046/croot/mapclassify_1770821075582/work
+MarkupSafe @ file:///croot/markupsafe_1738584038848/work
+matplotlib==3.10.8
+mkl-service==2.5.2
+mkl_fft @ file:///home/task_177730042475029/croot/mkl_fft_1777300452816/work
+mkl_random @ file:///home/task_176159294306005/conda-bld/mkl_random_1761592958759/work
+networkx @ file:///home/task_176537856615560/conda-bld/networkx_1765378627201/work
+numpy @ file:///home/task_177618877531279/croot/numpy_and_numpy_base_1776188800983/work/dist/numpy-2.4.4-cp313-cp313-linux_x86_64.whl#sha256=3ec6f5bc893d683d0469a4b4a8044db8990b4660b88adb417d519f9cb48a71df
+openpyxl @ file:///croot/openpyxl_1736366913861/work
+outcome @ file:///croot/outcome_1741014030079/work
+packaging==26.0
+pandas @ file:///home/task_177547984003748/croot/pandas_1775480129071/work
+pillow @ file:///home/task_177247532167858/croot/pillow_1772475362265/work
+pycparser @ file:///home/task_177495969264897/croot/pycparser_1774959744365/work
+pyogrio @ file:///croot/pyogrio_1753452334159/work
+pyparsing @ file:///home/task_176397383618695/conda-bld/pyparsing_1763973847947/work
+pyproj @ file:///home/task_176977222505853/croot/pyproj_1769772400762/work
+PySocks @ file:///home/task_176175235884818/conda-bld/pysocks_1761753009495/work
+python-dateutil @ file:///work/perseverance-python-buildout/croot/python-dateutil_1728385355105/work
+requests @ file:///home/task_177506603358355/croot/requests_1775066075144/work
+scikit-learn @ file:///home/task_176609792431975/croot/scikit-learn_1766097947322/work
+scipy @ file:///home/task_177627760599697/croot/scipy_1776277630451/work/dist/scipy-1.17.1-cp313-cp313-linux_x86_64.whl#sha256=01373e49b9bec0124225403a72b8a9bcace67ff8be342c91b070635234562dbe
+selenium @ file:///home/task_176244512410909/conda-bld/selenium_1762445198741/work
+setuptools==82.0.1
+shapely @ file:///home/task_176484665702983/conda-bld/shapely_1764846853337/work
+six @ file:///croot/six_1744271502820/work
+sniffio @ file:///home/task_176432917442011/conda-bld/sniffio_1764329188237/work
+sortedcontainers @ file:///tmp/build/80754af9/sortedcontainers_1623949099177/work
+soupsieve @ file:///work/perseverance-python-buildout/croot/soupsieve_1728385708765/work
+threadpoolctl @ file:///home/task_176436167816616/conda-bld/threadpoolctl_1764361722727/work
+trio @ file:///home/task_176242197600760/conda-bld/trio_1762422068259/work
+trio-websocket @ file:///home/task_176709310915797/croot/trio-websocket_1767093330874/work
+typing_extensions @ file:///croot/typing_extensions_1756280817316/work
+urllib3 @ file:///home/task_176781010304586/croot/urllib3_1767810267320/work
+websocket-client @ file:///work/perseverance-python-buildout/croot/websocket-client_1728386934860/work
+wheel==0.46.3
+wsproto @ file:///home/task_176371849765996/conda-bld/wsproto_1763718511144/work
+xyzservices @ file:///home/task_177678296920605/croot/xyzservices_1776782996557/work

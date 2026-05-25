@@ -1,0 +1,41 @@
+ESPECIE: Zygia_longifolia
+==================================================
+
+Familia: Fabaceae
+Nombre científico: Zygia longifolia
+Autor: (Willd.) Britton & Rose
+Etimología: Zygia , del griego zugon , yugo, por la madera de algunas especies de este género que se utilizan para fabricar yugos; longifolia , del latín, longus , que significa largo, y folia, del latín folium , que hace referencia a la hoja
+SinónimoPithecellobium longifolium (Willd.) Standl.: Pithecellobium longifolium (Willd.) Standl.
+Nombre común: Suribio
+Origen: Nativa
+Continente: América tropical
+Distribución geográfica: Centroamérica a Venezuela, Brasil y Perú
+Altura máxima (m): 20
+Diámetro (cm): 20
+Amplitud de copa: Amplia (mayor que 14 m)
+Densidad de follaje: Alta
+Modelo arquitectónico: No determinado
+Sistema radicular: No determinado
+Atributos foliares: Miden 10 cm de largo por 15 cm de ancho, glabras
+Persistencia hoja: Semicaducifolia
+Atributos florales: Miden 1, 5 cm de largo, estambres largos y numeroso
+Estación de floración: Estacional
+Sistema de polinización: No determinado
+Limitaciones flores: Ninguna
+Limitaciones frutos en espacios públicos: Masivos: afecta movilidad de peatones y vehículos
+Sistema de dispersión: Aves
+Atracción fauna: Alta
+Densidad madera (g/cm³): 0.71
+Tasa de crecimiento: Rápida
+Longevidad: Alta (> 60 años)
+Zonas de humedad: Húmeda
+Rango altitudinal: 0 - 1000 msnm, 1001 - 1500 msnm, 1501 - 2000 msnm
+Requerimiento de luminosidad: Alta
+Tipo de suelo: Tolera niveles freáticos altos
+Uso: No determinado
+Función: Ornamental, Sombrío, Restauración ecológica, Alimento para la fauna, Hábitat para la fauna
+Usos en espacio público: Retiros de quebrada, Parques, Andenes vías de servicio, Vías peatonales, Orejas de puente, Glorietas, Plazas/Plazoletas, Edificios institucionales
+Estado de conservación: Preocupación menor (LC)
+Plagas y enfermedades reportadas: -
+Observaciones: Estado de conservación: preocupación menor
+Fuentes: Morales y Varón (2013), Idárraga, Ortíz, Callejas y Merello (2013), SAO (2009), AMVA y UNAL (2014)

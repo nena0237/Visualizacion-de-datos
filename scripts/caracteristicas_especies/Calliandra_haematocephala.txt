@@ -1,0 +1,41 @@
+ESPECIE: Calliandra_haematocephala
+==================================================
+
+Familia: Fabaceae
+Nombre científico: Calliandra haematocephala
+Autor: Hassk.
+Etimología: Calliandra , del griego kalos , bello y andros , macho, por la belleza de sus estambres; haematocephala , epíteto latín compuesto por haemato , sangre, rojo y cephala , cabeza, por sus inflorescencias
+Sinónimo-: -
+Nombre común: Carbonero (haematocephala)
+Origen: Nativa
+Continente: Sur América
+Distribución geográfica: Nativa de Bolivia; ampliamente cultivada alrededor del mundo
+Altura máxima (m): 3
+Diámetro (cm): 20
+Amplitud de copa: Media (7 - 14 m)
+Densidad de follaje: Media
+Modelo arquitectónico: No determinado
+Sistema radicular: No determinado
+Atributos foliares: No determinado
+Persistencia hoja: Perenne
+Atributos florales: No determinado
+Estación de floración: No determinado
+Sistema de polinización: No determinado
+Limitaciones flores: Ninguna
+Limitaciones frutos en espacios públicos: Ninguna
+Sistema de dispersión: No determinado
+Atracción fauna: -
+Densidad madera (g/cm³): No determinado
+Tasa de crecimiento: Rápida
+Longevidad: Media (36 - 60 años)
+Zonas de humedad: Húmeda
+Rango altitudinal: 1001 - 1500 msnm, 1501 - 2000 msnm
+Requerimiento de luminosidad: Alta
+Tipo de suelo: No es exigente en suelos
+Uso: Su madera se usa para construcciones interiores, postes para cercas y mangos de herramientas
+Función: Ornamental, Restauración ecológica, Seto, Barrera rompevientos, Alimento para la fauna
+Usos en espacio público: Antejardines, Retiros de quebrada, Parques, Plazas/Plazoletas, Vías peatonales, Glorietas, Edificios institucionales
+Estado de conservación: No evaluada
+Plagas y enfermedades reportadas: -
+Observaciones: -
+Fuentes: Morales y Varón (2013), Morales y Varón (2006), Idárraga, Ortíz, Callejas y Merello (2013), AMVA y UNAL (2014)

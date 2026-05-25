@@ -1,0 +1,41 @@
+ESPECIE: Bauhinia_picta
+==================================================
+
+Familia: Fabaceae
+Nombre científico: Bauhinia picta
+Autor: (Kunth) DC.
+Etimología: Bauhinia , género dedicado a los hermanos suizos Johann y Gaspar Bauhin; picta , del latín que significa de vivos colores o pintado.
+SinónimoBauhinia kalbreyeri Harms: Bauhinia kalbreyeri Harms
+Nombre común: Casco de vaca (picta)
+Origen: Nativa
+Continente: Sur América
+Distribución geográfica: Colombia, Venezuela, Panamá
+Altura máxima (m): 18
+Diámetro (cm): 40
+Amplitud de copa: Media (7 - 14 m)
+Densidad de follaje: Alta
+Modelo arquitectónico: No determinado
+Sistema radicular: No determinado
+Atributos foliares: Divididas en dos lóbulos, ampliamente ovados y acuminados en el ápice
+Persistencia hoja: Semicaducifolia
+Atributos florales: Flores vistosas y aromáticas, con 5 pétalos claviformes
+Estación de floración: Permanente
+Sistema de polinización: Aves
+Limitaciones flores: Ninguna
+Limitaciones frutos en espacios públicos: Ninguna
+Sistema de dispersión: Baricoria (gravedad)
+Atracción fauna: Alta
+Densidad madera (g/cm³): No determinado
+Tasa de crecimiento: Media a Rápida
+Longevidad: Alta (> 60 años)
+Zonas de humedad: Húmeda
+Rango altitudinal: 0 - 1000 msnm, 1001 - 1500 msnm, 1501 - 2000 msnm
+Requerimiento de luminosidad: Alta
+Tipo de suelo: Bien drenado
+Uso: No determinado.
+Función: Ornamental, Barrera rompevientos, Sombrío, Restauración ecológica
+Usos en espacio público: Parques, Plazas/Plazoletas, Separador autopistas, Retiros de quebrada, Separador arterias principales, Andenes vías de servicio, Vías peatonales, Orejas de puente, Glorietas, Edificios institucionales
+Estado de conservación: No evaluada
+Plagas y enfermedades reportadas: -
+Observaciones: Cuando se planta en suelos compactos o la procedencia del árbol es de mala calidad, sus raíces son superficiales y pueden perder la estabilidad o afectar aceras.
+Fuentes: Morales y Varón (2013), Alcaldía de Medellín (2011), SAO (2009), AMVA y UNAL (2014)

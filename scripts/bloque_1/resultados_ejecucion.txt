@@ -1,0 +1,309 @@
+======================================================================
+  BLOQUE 1 v2 — INTEGRACIÓN CORREGIDA: PM2.5 + ARBORIZACIÓN
+======================================================================
+
+[1/7] Cargando polígonos catastrales de comunas...
+   ✔ 21 polígonos de comunas cargados y reproyectados a WGS84
+   ✔ Comunas: ['Aranjuez', 'Belén', 'Buenos Aires', 'Castilla', 'Corregimiento de Altavista', 'Corregimiento de San Antonio de Prado', 'Corregimiento de San Cristóbal', 'Corregimiento de San Sebastián de Palmitas', 'Corregimiento de Santa Elena', 'Doce de Octubre', 'El Poblado', 'Guayabal', 'La América', 'La Candelaria', 'Laureles Estadio', 'Manrique', 'Popular', 'Robledo', 'San Javier', 'Santa Cruz', 'Villa Hermosa']
+
+[2/7] Geolocalizando estaciones con spatial join (coordenadas → polígono)...
+
+   RESULTADO DEL SPATIAL JOIN (Corrección de comunas):
+   Estación     Nombre                                              Lat          Lon  Comuna asignada por GIS
+   ---------------------------------------------------------------------------------------------------------
+   CEN-TRAF     Estación Tráfico Centro                          6.2526     -75.5696  La Candelaria                  [Activa]
+   MED-UNNV     Universidad Nacional sede El Volador             6.2634     -75.5770  Robledo                        [Inactiva]
+   MED-LAYE     Tanques La Ye EPM                                6.1825     -75.5506  Corregimiento de Santa Elena   [Inactiva]
+   MED-ALTA     I.E. Pedro Octavio Amado                         6.2219     -75.6106  Belén                          [Activa]
+   MED-VILL     Planta de agua potable de EPM                    6.2617     -75.5516  Villa Hermosa                  [Activa]
+   MED-BEME     I.E. Pedro Justo Berrío                          6.2430     -75.6120  La América                     [Activa]
+   MED-TESO     I.E. INEM sede Santa Catalina                    6.1999     -75.5610  El Poblado                     [Activa]
+   MED-SCRI     Parque Biblioteca Fernando Botero                6.2805     -75.6366  Corregimiento de San Cristóbal [Activa]
+   MED-ARAN     I.E. Ciro Mendía                                 6.2935     -75.5564  Santa Cruz                     [Activa]
+   MED-SELE     Medellín - Santa Elena                           6.2364     -75.4985  Corregimiento de Santa Elena   [Activa]
+   MED-FISC     Fiscalía General de la Nación                    6.2688     -75.5737  Castilla                       [Activa]
+   MED-PBLQ     Tomás Carrasquilla - La Quintana                 6.2850     -75.5831  Robledo                        [Activa]
+   MED-PROV     Almacén General de EPM                           6.2298     -75.5861  Guayabal                       [Activa]
+   MED-CES      Universidad CES                                  6.2074     -75.5519  El Poblado                     [Activa]
+
+[3/7] Procesando series de tiempo PM2.5 (SIATA 2023-2025)...
+   ✔ Registros horarios 2023-2025 : 26,304
+   ✔ Estaciones con datos          : 13
+
+[4/7] Agregando PM2.5 por estación y cuatrimestre...
+   ✔ Estación-período registros    : 107
+   ✔ Comuna-período registros      : 97
+   ✔ Comunas con PM2.5 medido      : 11
+
+[5/7] Consolidando inventario arbóreo desde archivos por comuna...
+   ✔ Especies mitigadoras PM2.5 en el catálogo: 5
+     · Bauhinia picta
+     · Calliandra haematocephala
+     · Inga densiflora
+     · Retrophyllum rospigliosii
+     · Zygia longifolia
+
+   INVENTARIO ARBÓREO POR COMUNA:
+   Comuna                                          Total  Mitgdrs       %
+   ------------------------------------------------------------------------
+   La Candelaria                                   7,294      320    4.4%
+   Robledo                                         4,398      154    3.5%
+   Santa Cruz                                      4,343      118    2.7%
+   Popular                                         4,158      164    3.9%
+   Guayabal                                        4,123       81    2.0%
+   Corregimiento de Santa Elena                    4,093      219    5.3%
+   Manrique                                        3,989      151    3.8%
+   Corregimiento de San Cristóbal                  3,942      155    3.9%
+   Villa Hermosa                                   3,615      118    3.3%
+   Belén                                           3,259      101    3.1%
+   Laureles Estadio                                3,256      199    6.1%
+   Castilla                                        3,077       62    2.0%
+   Doce de Octubre                                 2,711       53    1.9%
+   Buenos Aires                                    2,695      112    4.2%
+   Aranjuez                                        2,692       20    0.7%
+   La América                                      2,588      140    5.4%
+   San Javier                                      2,456       99    4.0%
+   El Poblado                                      2,209       42    1.9%
+   Corregimiento de San Sebastián de Palmitas        513       54   10.5%
+
+   ✔ Total árboles en inventario   : 65,411
+   ✔ Total mitigadores PM2.5       : 2,362
+
+[6/7] Construyendo dataset integrado final...
+   ✔ Filas dataset final : 97
+   ✔ Columnas           : 17
+
+[7/7] Calculando relaciones para Bloque 2...
+
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │  EXPLICACIÓN DE CADA MÉTRICA DE RELACIÓN                           │
+  │                                                                     │
+  │  A) Correlación de Pearson (r)                                      │
+  │     Mide si dos variables numéricas se mueven juntas.              │
+  │     Fórmula:                                                        │
+  │       r = Σ[(xi - x̄)(yi - ȳ)] / √[Σ(xi-x̄)² · Σ(yi-ȳ)²]         │
+  │     Resultado entre -1 y +1.                                        │
+  │       +1 = se mueven igual  |  -1 = se mueven opuesto              │
+  │       0  = ninguna relación lineal                                  │
+  │     Usada para: PM2.5 vs árboles mitigadores, PM2.5 vs ratio       │
+  │                                                                     │
+  │  B) Score de Vulnerabilidad (compuesto)                             │
+  │     Combina ranking de PM2.5 alto + ranking de bajo ratio           │
+  │     de mitigadores.                                                 │
+  │     Fórmula:                                                        │
+  │       score = rank_desc(PM2.5) + rank_asc(arboles_mitigadores)     │
+  │     A mayor score → la comuna es más urgente de intervenir.        │
+  │     NO es lineal, es ordinal: importa el orden, no el valor.       │
+  │                                                                     │
+  │  C) Déficit de mitigadores                                          │
+  │     ¿Cuántos árboles mitigadores le faltan a cada comuna           │
+  │     para llegar a un benchmark del 30%?                             │
+  │     Fórmula:                                                        │
+  │       déficit = max(0, (0.30 - ratio_actual) × total_arboles)      │
+  │     Si el ratio ya es ≥30%, déficit = 0.                            │
+  │     El 30% es una meta orientativa; se puede ajustar.             │
+  │                                                                     │
+  │  D) Ratio mitigadores/km² (densidad espacial)                      │
+  │     Cuántos mitigadores hay por cada km² de la comuna.             │
+  │     Útil para comparar comunas grandes vs pequeñas.                │
+  │     Fórmula:                                                        │
+  │       densidad = arboles_mitigadores / area_km2                     │
+  │                                                                     │
+  │  IMPORTANTE: La correlación entre PM2.5 y árboles es una           │
+  │  correlación ECOLÓGICA (entre comunas), no causal.                 │
+  │  No significa que los árboles causen PM2.5 ni viceversa.          │
+  │  Hay variables de confusión: tráfico, industria, altitud,          │
+  │  densidad poblacional, topografía del valle.                        │
+  └─────────────────────────────────────────────────────────────────────┘
+
+  A) CORRELACIONES DE PEARSON (n comunas = 11):
+     PM2.5 vs Cantidad árboles mitigadores : r = +0.286
+     PM2.5 vs % ratio mitigadores          : r = -0.012
+     PM2.5 vs Total árboles                : r = +0.435
+
+     Interpretación:
+     · PM2.5 vs mitigadores (+0.286, débil): Más contaminada → más árboles sembrados ahí (siembra reactiva)
+     · PM2.5 vs ratio       (-0.012, negligible): Mayor % mitigadores asociado a menor PM2.5
+
+======================================================================
+  DATASET FINAL — MUESTRA POR PERÍODO
+======================================================================
+
+  ── 2023_T1_Ene-Abr ──
+                        comuna  pm25_promedio_ug_m3    categoria_oms  cantidad_arboles_totales  cantidad_arboles_mitigadores_pm25  ratio_mitigadores_pct
+                         Belén                22.81         Moderada                      3259                                101                   3.10
+                      Castilla                22.16         Moderada                      3077                                 62                   2.01
+Corregimiento de San Cristóbal                20.03         Moderada                      3942                                155                   3.93
+  Corregimiento de Santa Elena                15.32         Moderada                      4093                                219                   5.35
+                    El Poblado                18.18         Moderada                      2209                                 42                   1.90
+                    La América                21.28         Moderada                      2588                                140                   5.41
+                 La Candelaria                26.80 Dañina sensibles                      7294                                320                   4.39
+                       Robledo                19.38         Moderada                      4398                                154                   3.50
+                    Santa Cruz                20.92         Moderada                      4343                                118                   2.72
+                 Villa Hermosa                20.45         Moderada                      3615                                118                   3.26
+
+  ── 2023_T2_May-Ago ──
+                        comuna  pm25_promedio_ug_m3 categoria_oms  cantidad_arboles_totales  cantidad_arboles_mitigadores_pm25  ratio_mitigadores_pct
+                         Belén                16.48      Moderada                      3259                                101                   3.10
+                      Castilla                19.28      Moderada                      3077                                 62                   2.01
+Corregimiento de San Cristóbal                13.95     Aceptable                      3942                                155                   3.93
+  Corregimiento de Santa Elena                11.38     Aceptable                      4093                                219                   5.35
+                    El Poblado                14.13     Aceptable                      2209                                 42                   1.90
+                    La América                17.60      Moderada                      2588                                140                   5.41
+                 La Candelaria                20.52      Moderada                      7294                                320                   4.39
+                       Robledo                13.56     Aceptable                      4398                                154                   3.50
+                    Santa Cruz                14.60     Aceptable                      4343                                118                   2.72
+                 Villa Hermosa                12.79     Aceptable                      3615                                118                   3.26
+
+  ── 2023_T3_Sep-Dic ──
+                        comuna  pm25_promedio_ug_m3 categoria_oms  cantidad_arboles_totales  cantidad_arboles_mitigadores_pm25  ratio_mitigadores_pct
+                         Belén                19.58      Moderada                      3259                                101                   3.10
+                      Castilla                18.94      Moderada                      3077                                 62                   2.01
+Corregimiento de San Cristóbal                16.77      Moderada                      3942                                155                   3.93
+  Corregimiento de Santa Elena                12.24     Aceptable                      4093                                219                   5.35
+                    El Poblado                18.85      Moderada                      2209                                 42                   1.90
+                      Guayabal                17.37      Moderada                      4123                                 81                   1.96
+                    La América                19.55      Moderada                      2588                                140                   5.41
+                 La Candelaria                22.86      Moderada                      7294                                320                   4.39
+                       Robledo                15.55      Moderada                      4398                                154                   3.50
+                    Santa Cruz                17.44      Moderada                      4343                                118                   2.72
+                 Villa Hermosa                15.44      Moderada                      3615                                118                   3.26
+
+  ── 2024_T1_Ene-Abr ──
+                        comuna  pm25_promedio_ug_m3    categoria_oms  cantidad_arboles_totales  cantidad_arboles_mitigadores_pm25  ratio_mitigadores_pct
+                         Belén                27.64 Dañina sensibles                      3259                                101                   3.10
+                      Castilla                23.83         Moderada                      3077                                 62                   2.01
+Corregimiento de San Cristóbal                22.13         Moderada                      3942                                155                   3.93
+  Corregimiento de Santa Elena                19.16         Moderada                      4093                                219                   5.35
+                    El Poblado                21.34         Moderada                      2209                                 42                   1.90
+                      Guayabal                22.24         Moderada                      4123                                 81                   1.96
+                    La América                25.94 Dañina sensibles                      2588                                140                   5.41
+                 La Candelaria                35.69   Dañina general                      7294                                320                   4.39
+                       Robledo                23.18         Moderada                      4398                                154                   3.50
+                    Santa Cruz                25.27 Dañina sensibles                      4343                                118                   2.72
+                 Villa Hermosa                22.48         Moderada                      3615                                118                   3.26
+
+  ── 2024_T2_May-Ago ──
+                        comuna  pm25_promedio_ug_m3 categoria_oms  cantidad_arboles_totales  cantidad_arboles_mitigadores_pm25  ratio_mitigadores_pct
+                         Belén                19.33      Moderada                      3259                                101                   3.10
+                      Castilla                15.84      Moderada                      3077                                 62                   2.01
+Corregimiento de San Cristóbal                12.79     Aceptable                      3942                                155                   3.93
+  Corregimiento de Santa Elena                 7.58     Aceptable                      4093                                219                   5.35
+                    El Poblado                11.86     Aceptable                      2209                                 42                   1.90
+                      Guayabal                14.75     Aceptable                      4123                                 81                   1.96
+                    La América                17.27      Moderada                      2588                                140                   5.41
+                 La Candelaria                24.30      Moderada                      7294                                320                   4.39
+                       Robledo                13.25     Aceptable                      4398                                154                   3.50
+                    Santa Cruz                15.15      Moderada                      4343                                118                   2.72
+                 Villa Hermosa                13.16     Aceptable                      3615                                118                   3.26
+
+  ── 2024_T3_Sep-Dic ──
+                        comuna  pm25_promedio_ug_m3    categoria_oms  cantidad_arboles_totales  cantidad_arboles_mitigadores_pm25  ratio_mitigadores_pct
+                         Belén                22.34         Moderada                      3259                                101                   3.10
+                      Castilla                20.23         Moderada                      3077                                 62                   2.01
+Corregimiento de San Cristóbal                14.27        Aceptable                      3942                                155                   3.93
+  Corregimiento de Santa Elena                 8.49        Aceptable                      4093                                219                   5.35
+                    El Poblado                12.93        Aceptable                      2209                                 42                   1.90
+                      Guayabal                16.52         Moderada                      4123                                 81                   1.96
+                    La América                20.64         Moderada                      2588                                140                   5.41
+                 La Candelaria                26.17 Dañina sensibles                      7294                                320                   4.39
+                       Robledo                15.72         Moderada                      4398                                154                   3.50
+                    Santa Cruz                17.41         Moderada                      4343                                118                   2.72
+                 Villa Hermosa                15.07         Moderada                      3615                                118                   3.26
+
+  ── 2025_T1_Ene-Abr ──
+                        comuna  pm25_promedio_ug_m3    categoria_oms  cantidad_arboles_totales  cantidad_arboles_mitigadores_pm25  ratio_mitigadores_pct
+                         Belén                23.05         Moderada                      3259                                101                   3.10
+                      Castilla                20.60         Moderada                      3077                                 62                   2.01
+Corregimiento de San Cristóbal                16.80         Moderada                      3942                                155                   3.93
+  Corregimiento de Santa Elena                 9.29        Aceptable                      4093                                219                   5.35
+                    El Poblado                14.10        Aceptable                      2209                                 42                   1.90
+                      Guayabal                19.05         Moderada                      4123                                 81                   1.96
+                    La América                20.40         Moderada                      2588                                140                   5.41
+                 La Candelaria                27.76 Dañina sensibles                      7294                                320                   4.39
+                       Robledo                17.08         Moderada                      4398                                154                   3.50
+                    Santa Cruz                18.96         Moderada                      4343                                118                   2.72
+                 Villa Hermosa                16.47         Moderada                      3615                                118                   3.26
+
+  ── 2025_T2_May-Ago ──
+                        comuna  pm25_promedio_ug_m3 categoria_oms  cantidad_arboles_totales  cantidad_arboles_mitigadores_pm25  ratio_mitigadores_pct
+                         Belén                16.44      Moderada                      3259                                101                   3.10
+                      Castilla                12.33     Aceptable                      3077                                 62                   2.01
+Corregimiento de San Cristóbal                12.54     Aceptable                      3942                                155                   3.93
+  Corregimiento de Santa Elena                 5.85     Aceptable                      4093                                219                   5.35
+                    El Poblado                10.14     Aceptable                      2209                                 42                   1.90
+                      Guayabal                15.05      Moderada                      4123                                 81                   1.96
+                    La América                16.42      Moderada                      2588                                140                   5.41
+                 La Candelaria                20.18      Moderada                      7294                                320                   4.39
+                       Robledo                12.65     Aceptable                      4398                                154                   3.50
+                    Santa Cruz                13.86     Aceptable                      4343                                118                   2.72
+                 Villa Hermosa                11.21     Aceptable                      3615                                118                   3.26
+
+  ── 2025_T3_Sep-Dic ──
+                        comuna  pm25_promedio_ug_m3 categoria_oms  cantidad_arboles_totales  cantidad_arboles_mitigadores_pm25  ratio_mitigadores_pct
+                         Belén                18.31      Moderada                      3259                                101                   3.10
+                      Castilla                16.59      Moderada                      3077                                 62                   2.01
+Corregimiento de San Cristóbal                14.23     Aceptable                      3942                                155                   3.93
+  Corregimiento de Santa Elena                 7.27     Aceptable                      4093                                219                   5.35
+                    El Poblado                12.11     Aceptable                      2209                                 42                   1.90
+                      Guayabal                16.65      Moderada                      4123                                 81                   1.96
+                    La América                18.10      Moderada                      2588                                140                   5.41
+                 La Candelaria                23.69      Moderada                      7294                                320                   4.39
+                       Robledo                16.23      Moderada                      4398                                154                   3.50
+                    Santa Cruz                16.02      Moderada                      4343                                118                   2.72
+                 Villa Hermosa                14.23     Aceptable                      3615                                118                   3.26
+
+======================================================================
+  RANKING DE PRIORIDAD PARA EL BLOQUE 2 (promedio 2023-2025)
+======================================================================
+
+  Prioridad                        Comuna                               PM2.5  %Mitg  Déficit  Adicionales
+  ---------------------------------------------------------------------------------------------------------
+  🔴 ALTA – Intervención Urgente    La Candelaria                         25.3   4.4%    25.6%         1868
+  🟠 MEDIA-ALTA – Prioridad Elevada Belén                                 20.7   3.1%    26.9%          877
+  🟠 MEDIA-ALTA – Prioridad Elevada La América                            19.7   5.4%    24.6%          636
+  🟠 MEDIA-ALTA – Prioridad Elevada Castilla                              18.9   2.0%    28.0%          861
+  🟠 MEDIA-ALTA – Prioridad Elevada Santa Cruz                            17.7   2.7%    27.3%         1185
+  🟠 MEDIA-ALTA – Prioridad Elevada Guayabal                              17.4   2.0%    28.0%         1156
+  🟠 MEDIA-ALTA – Prioridad Elevada Robledo                               16.3   3.5%    26.5%         1165
+  🟡 MEDIA – Monitoreo Activo       Corregimiento de San Cristóbal        15.9   3.9%    26.1%         1028
+  🟡 MEDIA – Monitoreo Activo       Villa Hermosa                         15.7   3.3%    26.7%          967
+  🟡 MEDIA – Monitoreo Activo       El Poblado                            14.8   1.9%    28.1%          621
+  🟡 MEDIA – Monitoreo Activo       Corregimiento de Santa Elena          10.7   5.3%    24.6%         1009
+
+======================================================================
+  RECOMENDACIONES METODOLÓGICAS PARA BLOQUE 2
+======================================================================
+
+  Con el dataset integrado ya disponible, el Bloque 2 debe:
+
+  1. CRUZAR con capa de zonas verdes (suelo disponible para siembra):
+       → Unión espacial: polígono de zona verde ∩ polígono de comuna
+       → Filtrar: zonas con cobertura grama/tierra sin saturación arbórea
+       → Variable resultante: "m² disponibles para siembra por comuna"
+
+  2. MODELO DE PRIORIZACIÓN multicriteria (AHP o ponderación simple):
+       w1 · PM2.5_promedio  +  w2 · déficit_mitigadores  +  w3 · m²_disponibles
+       Pesos sugeridos: w1=0.45, w2=0.35, w3=0.20
+       (Ajustables según política pública de la Secretaría)
+
+  3. VARIABLES DE CONTROL a incorporar si se tienen datos:
+       · Densidad poblacional (personas expuestas, DANE 2018/2022)
+       · Altitud promedio de la comuna (confunde la comparación con C. Santa Elena)
+       · Flujo vehicular (SIATA o Secretaría de Movilidad)
+       · Índice de masa forestal existente (cobertura, no solo conteo)
+
+  4. VALIDACIÓN DEL BENCHMARK 30%:
+       El 30% de mitigadores es orientativo. Para justificarlo técnicamente,
+       se necesita literatura de eficiencia de captura de PM2.5 por especie
+       en clima tropical urbano (Zygia, Calliandra, Inga, Bauhinia, Retrophyllum).
+
+======================================================================
+  ARCHIVOS GENERADOS
+======================================================================
+  ✅ Dataset integrado v2   : integracion_v2_pm25_arboles_medellin.csv
+  ✅ Relaciones Bloque 2    : relaciones_v2_bloque2.csv
+  ✅ Auditoría estaciones   : auditoria_estaciones_comunas.csv
+======================================================================
+  Pipeline v2 completado.
+

@@ -1,0 +1,40 @@
+ESPECIE: Inga_densiflora
+==================================================
+Familia: Fabaceae [en.wikipedia.org]
+Nombre científico: Inga densiflora [en.wikipedia.org]
+Autor: Benth. [en.wikipedia.org]
+Etimología: Inga, nombre indígena sudamericano para especies de este género; densiflora, del latín “flores densas”, en referencia a sus inflorescencias agrupadas. [selinawamucii.com]
+Sinónimo: Feuilleea densiflora (Benth.) Kuntze; Inga monticola Pittier; Inga sordida Pittier [en.wikipedia.org], [powo.science.kew.org]
+Nombre común: Guamo machete, guamo, guamo churimo [shadecoffee.org]
+Origen: Nativa [Universida...Colombia:]
+Continente: América (Centro y Suramérica) [powo.science.kew.org]
+Distribución geográfica: Desde México hasta Bolivia; en Colombia ampliamente distribuida [powo.science.kew.org], [Universida...Colombia:]
+Altura máxima (m): 15 – 20 [edibleplantdb.org], [reddearboles.org]
+Diámetro (cm): 50 (aprox.) [asvillaluz.org]
+Amplitud de copa: Amplia (copa extendida) [asvillaluz.org]
+Densidad de follaje: Alta [asvillaluz.org]
+Modelo arquitectónico: No determinado
+Sistema radicular: No determinado
+Atributos foliares: Hojas compuestas con varios pares de folíolos, con raquis alado [reddearboles.org]
+Persistencia hoja: No determinada (generalmente perennifolia en climas tropicales)
+Atributos florales: Flores blancas, agrupadas en inflorescencias densas tipo “pompones” [plantiary.com], [reddearboles.org]
+Estación de floración: No determinada
+Sistema de polinización: Atrae polinizadores (probablemente insectos y aves) [shadecoffee.org]
+Limitaciones flores: Ninguna reportada
+Limitaciones frutos en espacios públicos: Puede generar caída de vainas grandes
+Sistema de dispersión: Zoocoria (fauna consume el arilo del fruto) [reddearboles.org]
+Atracción fauna: Alta (aves y mamíferos consumen el fruto) [reddearboles.org]
+Densidad madera (g/cm³): No determinada
+Tasa de crecimiento: Rápida [catalogoar...eia.edu.co]
+Longevidad: Moderada [catalogoar...eia.edu.co]
+Zonas de humedad: Húmeda tropical [edibleplantdb.org]
+Rango altitudinal: 20 – 2000 msnm [gbif.org]
+Requerimiento de luminosidad: Alta (pleno sol) [selinawamucii.com]
+Tipo de suelo: Bien drenado, tolera suelos variados [pfaf.org]
+Uso: Alimenticio, agroforestal
+Función: Sombrío, restauración ecológica, fijación de nitrógeno, barrera rompevientos, recuperación de suelos [shadecoffee.org]
+Usos en espacio público: Parques, zonas rurales, cercas vivas, restauración, bordes de quebradas
+Estado de conservación: Preocupación menor [Universida...Colombia:]
+Plagas y enfermedades reportadas: Cochinillas, hongos, insectos defoliadores [elsemillero.net]
+Observaciones: Árbol importante en sistemas agroforestales (especialmente café), provee sombra y mejora el suelo; sus frutos son comestibles y muy apreciados por fauna y humanos. [shadecoffee.org]
+Fuentes: Catálogo de Plantas de Colombia (UNAL), GBIF, POWO (Kew), Catálogo de flora del Valle de Aburrá, Red de Árboles, PFAF, Edible Plant Database, Wikipedia.
