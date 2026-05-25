@@ -1,126 +1,208 @@
 # Proyecto de Visualización de Datos
 
-Este proyecto contiene herramientas para visualizar datos geoespaciales y estadísticos de Bogotá, Colombia.
+Arborización Urbana para Mitigación de PM2.5 — Medellín
+
+Proyecto enfocado en el análisis de calidad del aire (PM2.5), inventario arbóreo urbano y generación de recomendaciones de siembra estratégica para el Distrito de Medellín.
 
 ## Estructura del Proyecto
 
 ```
-.
-├── main_proyecto/
-│   ├── bases_de_datos/         # Carpetas con las bases de datos utilizadas
-│   ├── dashboard/              # Aplicación web de Streamlit
-│   │   ├── app.py              # Aplicación principal de Streamlit
-│   │   ├── generar_mapa_coropletico.py  # Script para generar mapas coropléticos
-│   │   ├── mapa_coropletico_pm25.py     # Script para mapas de PM2.5
-│   │   ├── mapa_coropletico_pm25_zonas_verdes.py  # Script para mapas de PM2.5 y zonas verdes
-│   │   ├── style.css           # Estilos personalizados
-│   │   └── ...                 # Otros archivos de apoyo
-│   ├── scripts/                # Scripts adicionales de procesamiento
-│   ├── venv/                   # Entorno virtual de Python
-│   └── requirements.txt        # Dependencias del proyecto
+├── README.txt
+├── dashboard
+│   ├── app.py
+│   ├── logo_alcaldia.png
+│   └── style.css
+│
+├── data
+│   ├── clean
+│   │   ├── auditoria_estaciones_comunas.csv
+│   │   ├── bloque2_recomendador_siembra.py
+│   │   ├── integracion_v2_pm25_arboles_medellin.csv
+│   │   ├── integracion_v2_pm25_arboles_medellin.py
+│   │   ├── recomendacion_siembra_por_zona.csv
+│   │   ├── relaciones_v2_bloque2.csv
+│   │   ├── resumen_recomendacion_por_comuna.csv
+│   │   └── zonas_priorizadas_siembra.geojson
+│   │
+│   └── raw
+│       ├── base_datos_arboles
+│       │   └── ARBOLES
+│       │       ├── Data_Clean
+│       │       │   └── ARBOLES.xlsx
+│       │       ├── Data_Raw
+│       │       │   ├── ARBOLES_TOTALES
+│       │       │   │   ├── ARANJUEZ.xlsx
+│       │       │   │   ├── BELEN.xlsx
+│       │       │   │   ├── ...
+│       │       │   └── ESPECIE_REDUCEN
+│       │       │       ├── CARBONERO_FLOR_ROJA.xlsx
+│       │       │       ├── CASCO_VACA.xlsx
+│       │       │       ├── ...
+│       │       └── Documentacion
+│       │           ├── ETL ÁRBOLES QUE REDUCEN PM2.pdf
+│       │           ├── Plan Distrital de Silvicultura Urbana.pdf
+│       │           └── ...
+│       │
+│       ├── base_datos_comunas
+│       │   └── geojson_limite_catastral_de_comun
+│       │       └── limite_catastral_de_comun.geojson
+│       │
+│       ├── base_datos_siata
+│       │   └── siata
+│       │       ├── MetadatosEstacionesPM25Historico.csv
+│       │       └── Solicitud_PM25_DP1763941.csv
+│       │
+│       └── base_datos_zonas_verdes
+│           └── geojson_inventario_zonas_verdes
+│               └── inventario_zonas_verdes.geojson
+│
+├── notebooks
+│
+├── presentacion
+│   └── presentacion.pptx
+│
+└── requirements.txt
 ```
 
-## Requisitos
+## Descripcion General
 
-- Python 3.9 o superior
-- Las dependencias listadas en `requirements.txt`
+El proyecto integra información proveniente de:
 
-## Instalación
+Estaciones SIATA de monitoreo PM2.5
+Inventario arbóreo urbano de Medellín
+Límites geográficos de comunas
+Inventario de zonas verdes
 
-1. Clonar o descargar este repositorio
-2. Navegar al directorio del proyecto:
+A partir de estos datos se construyen:
+
+Integraciones espaciales y ambientales
+Relaciones entre cobertura arbórea y PM2.5
+Recomendaciones de siembra priorizada
+Visualizaciones interactivas mediante Streamlit
+
+## Requisitos Previos
+
+Python 3.9 o superior
+pip actualizado
+Acceso completo a los datasets incluidos en data/raw
+
+## Instalacion
+
+1. Crear entorno virtual Windows
    ```bash
-   cd "C:\Users\jimen\OneDrive\Documentos\VISUALIZACIÓN DE DATOS\Proyecto de visualización de datos"
+   python -m venv venv -> .\venv\Scripts\activate
    ```
 
-## Activar el Entorno Virtual
+ * Crear entorno virtual Linux / Mac
+   ```bash
+   -> python3 -m venv venv -> source venv/bin/activate
+   ```
 
-El proyecto ya incluye un entorno virtual configurado. Para activarlo:
+ * Instalacion de dependencias
+   ```bash
+   -> pip install -r requirements.txt
+   ```
 
-### En Windows PowerShell:
-```powershell
-# Primero, si es necesario, ajuste la política de ejecución:
-Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
+* Dependencias principales utilizadas
+  pandas
+  geopandas
+  numpy
+  shapely
+  folium
+  streamlit
+  plotly
+  streamlit-folium
+   
+## Ejecucion del proyecto
 
-# Luego active el entorno virtual:
-# Parados desde main_proyecto
-.\venv\Scripts\Activate.ps1
+`Bloque 1 — Integración PM2.5 + Árboles`.
 
-# Luego para correr
-streamlit run app.py
-```
+Script encargado de:
 
-### En Command Prompt (cmd):
-```cmd
-.\main_proyecto\venv\Scripts\activate.bat
-```
+Integrar datos ambientales y arbóreos
+Relacionar estaciones SIATA con comunas
+Generar datasets integrados
 
-### En Git Bash o Linux/Mac Terminal:
+Ejecutar:
 ```bash
-source main_proyecto/venv/bin/activate
+-> python data/clean/integracion_v2_pm25_arboles_medellin.py
 ```
 
-Una vez activado, verá el nombre del entorno virtual al inicio de la línea de comandos, algo como:
-```
-(venv) C:\Users\jimen\OneDrive\Documentos\VISUALIZACIÓN DE DATOS\Proyecto de visualización de datos>
-```
+Outputs generados:
+`integracion_v2_pm25_arboles_medellin.csv`
+`relaciones_v2_bloque2.csv`
+`auditoria_estaciones_comunas.csv`
+`Bloque 2 — Recomendador de Siembra`
 
-## Instalar Dependencias
+Script encargado de:
 
-Si necesita reinstalar o actualizar las dependencias:
+Analizar zonas prioritarias
+Generar recomendaciones de arborización
+Crear capas geográficas para visualización
+
+Ejecutar:
 ```bash
-pip install -r main_proyecto\requirements.txt
+-> python data/clean/bloque2_recomendador_siembra.py
 ```
 
-## Ejecutar la Aplicación
+Outputs generados:
+`recomendacion_siembra_por_zona.csv`
+`resumen_recomendacion_por_comuna.csv`
+`zonas_priorizadas_siembra.geojson`
+Dashboard Interactivo
 
-La aplicación principal es un dashboard de Streamlit ubicado en `main_proyecto\dashboard\app.py`.
+Aplicación desarrollada con Streamlit para visualizar:
 
-Para ejecutarlo:
+Indicadores de PM2.5
+Cobertura arbórea
+Comunas priorizadas
+Mapas interactivos
+
+Ejecutar Dashboard
 ```bash
-streamlit run main_proyecto\dashboard\app.py
+-> streamlit run dashboard/app.py
 ```
 
-Esto abrirá automáticamente la aplicación en su navegador web predeterminado en la dirección:
-```
-http://localhost:8501
-```
+Estructura de Datos
+Datos Raw `(data/raw)`
 
-## Scripts Adicionales
+Contiene:
 
-El proyecto incluye varios scripts para generar visualizaciones específicas:
+Archivos originales Excel
+GeoJSON oficiales
+Bases SIATA
+Documentación técnica
+Datos Procesados `(data/clean)`
 
-1. `generar_mapa_coropletico.py` - Genera mapas coropléticos básicos
-2. `mapa_coropletico_pm25.py` - Genera mapas de concentración de PM2.5
-3. `mapa_coropletico_pm25_zonas_verdes.py` - Genera mapas combinando PM2.5 y zonas verdes
+Contiene:
 
-Para ejecutar cualquiera de estos scripts:
-```bash
-python main_proyecto\dashboard\nombre_del_script.py
-```
+Scripts principales
+Integraciones finales
+Outputs analíticos
+Capas geográficas generadas
 
-## Notas importantes
+Notas Importantes
 
-- Asegúrese de que el entorno virtual esté activado antes de instalar dependencias o ejecutar cualquier script
-- Algunas funcionalidades pueden requerir acceso a internet para descargar tiles de mapas o datos externos
-- Los archivos de datos están ubicados en las subcarpetas de `main_proyecto\bases_de_datos`
+Las rutas del proyecto son relativas.
 
-## Solución de Problemas
+Se recomienda ejecutar primero el `Bloque 1` y posteriormente el `Bloque 2`.
 
-### Problema: Error de ejecución de scripts en PowerShell
-Si recibe un error sobre la política de ejecución al intentar activar el entorno virtual, ejecute primero:
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
-```
+El `dashboard` depende de los outputs generados previamente.
 
-### Problema: Módulos no encontrados
-Asegúrese de haber activado el entorno virtual y de haber instalado las dependencias con:
-```bash
-pip install -r main_proyecto\requirements.txt
-```
+Algunos archivos `GeoJSON` pueden requerir `geopandas` y `fiona` correctamente instalados.
 
-### Problema: Puerto ya en uso
-Si el puerto 8501 está ocupado, puede especificar otro puerto:
-```bash
-streamlit run main_proyecto\dashboard\app.py --server.port=8502
-```
+Mantener la estructura de carpetas original para evitar errores de lectura.
+
+Tecnologías Utilizadas
+
+Python
+Pandas
+GeoPandas
+Streamlit
+Plotly
+Folium
+Shapely
+Autoría
+
+Proyecto académico y analítico orientado a estrategias de arborización urbana para mitigación de contaminación atmosférica en Medellín.
+
