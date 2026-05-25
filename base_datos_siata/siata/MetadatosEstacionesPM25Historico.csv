@@ -1,0 +1,15 @@
+﻿Código;Nombre_Estacion;Nombre;PM2.5;Latitud;Longitud;Nombre_Largo;Municipio;Estado actual
+12;Estación Tráfico Centro;CEN-TRAF;1;6,2525611;-75,5695801;Estación Tráfico Centro;Medellín;Activa
+25;Universidad Nacional sede El Volador;MED-UNNV;1;6,2633696;-75,5770035;Universidad Nacional Núcleo El Volador;Medellín;Inactiva
+44;Tanques La Ye EPM;MED-LAYE;1;6,1825418;-75,5506363;Tanques La Ye EPM;Medellín;Inactiva
+79;I.E. Pedro Octavio Amado;MED-ALTA;1;6,2218938;-75,6106033;Institución Educativa Pedro Octavio Amado;Medellín;Activa
+80;Planta de agua potable de EPM;MED-VILL;1;6,261722;-75,551639;Planta de agua potable de EPM;Medellín;Activa
+83;I.E. Pedro Justo Berrío;MED-BEME;1;6,243;-75,61201;Institución Educativa Pedro Justo Berrío;Medellín;Activa
+84;I.E. INEM sede Santa Catalina;MED-TESO;1;6,19987;-75,56095;Institución Educativa INEM Jose Félix de Restrepo Sede Santa Catalina;Medellín;Activa
+85;Parque Biblioteca Fernando Botero;MED-SCRI;1;6,2805;-75,6366;Parque Biblioteca Fernando Botero;Medellín;Activa
+86;I.E. Ciro Mendía;MED-ARAN;1;6,2934599;-75,556427;Institución Educativa Ciro Mendia;Medellín;Activa
+94;Medellín - Santa Elena;MED-SELE;1;6,236361;-75,498472;Medellín - Santa Elena;Medellín - Santa Elena;Activa
+100;Fiscalía General de la Nación;MED-FISC;1;6,2687889;-75,57370833;Fiscalía General de la Nación;Medellín;Activa
+103;Tomás Carrasquilla - La Quintana;MED-PBLQ;1;6,285;-75,583055;Parque Biblioteca Tomás Carrasquilla - La Quintana;Medellín;Activa
+104;Almacén General de EPM;MED-PROV;1;6,2297784;-75,5860518;Almacén General de EPM;Medellín;Activa
+106;Universidad CES;MED-CES;1;6,207386;-75,551851;Universidad CES;Medellín;Activa
